@@ -18,7 +18,6 @@
 - replace the `<pipelines></pipelines>` tag content in [test/godata/config/cruise-config.xml](test/godata/config/cruise-config.xml) with the contents in [test/pipeline_with_externals.xml](test/pipeline_with_externals.xml)
 - `tail -f tail -f test/svn-data/logs/access*.log` &rarr; the server continues to poll despite `autoUpdate="false"`
 
-![](doc/img/externals_polling.png)
 
 ```
 $ tail -f test/svn-data/logs/access_2018_07_14_00_00_00.log
