@@ -1,0 +1,21 @@
+PLAIN
+K 13
+svn:externals
+V 42
+helper http://svn-server:18080/svn/helper
+
+END
+ENDREP
+id: 0.0.r2/84
+type: dir
+pred: 0.0.r1/245
+count: 2
+text: 1 186 46 46 34dea61c2d1896238990d1d829e2fcba
+props: 2 0 71 71 82bf47fd9f5ceadf28cd1ac4e136ef66
+cpath: /
+copyroot: 0 /
+
+0.0.t1-1 modify-dir false true /
+
+
+84 259

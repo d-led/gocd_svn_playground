@@ -1,0 +1,14 @@
+    <pipeline name="with_externals">
+      <materials>
+        <svn url="http://svn-server:18080/svn/with_externals" username="admin" encryptedPassword="O0d9eKXXNds=" checkexternals="true" dest="with_externals" autoUpdate="false" materialName="with_externals" />
+      </materials>
+      <stage name="defaultStage" cleanWorkingDir="true">
+        <jobs>
+          <job name="defaultJob">
+            <tasks>
+              <exec command="ls" />
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>

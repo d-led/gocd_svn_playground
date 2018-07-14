@@ -27,3 +27,4 @@ erl_crash.dump
 ttb_last_config
 *.log
 tmp/
+test/svn-data/logs/
