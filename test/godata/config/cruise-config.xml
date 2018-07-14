@@ -2,23 +2,7 @@
 <cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="108">
   <server artifactsdir="artifacts" agentAutoRegisterKey="123456789abcdef" webhookSecret="12f2e565-b3aa-4e1b-896f-ff98b5abbfb5" commandRepositoryLocation="default" serverId="709cea85-43f1-4e60-9d10-7e5dfeea0cce" tokenGenerationKey="a9a9e550-68ff-4a17-9e40-73e74f8c72b4" />
   <pipelines group="defaultGroup">
-    <pipeline name="with_externals">
-      <materials>
-        <svn url="http://svn-server:18080/svn/with_externals" username="admin" encryptedPassword="O0d9eKXXNds=" checkexternals="true" dest="with_externals" autoUpdate="false" materialName="with_externals" />
-      </materials>
-      <stage name="defaultStage" cleanWorkingDir="true">
-        <jobs>
-          <job name="defaultJob">
-            <tasks>
-              <exec command="ls" />
-            </tasks>
-          </job>
-        </jobs>
-      </stage>
-    </pipeline>
   </pipelines>
   <agents>
-    <agent hostname="09b1cf8d7bd2" ipaddress="172.18.0.4" uuid="07195234-4e2d-490a-9fcd-758bf0d111f6" />
-    <agent hostname="4a0b76df0164" ipaddress="172.18.0.4" uuid="8c3b26b8-3426-41e9-987e-a4d0f8f8501c" />
   </agents>
 </cruise>

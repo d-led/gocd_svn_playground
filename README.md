@@ -5,7 +5,7 @@
 - `docker-compose up -d svn-server`
 - wait for the server to be initialized successfully, as it can have some hiccups
 - check the [SVN UI](http://localhost:3343) (`admin:admin`)
-- start the [SVN service](http://localhost:3343/csvn/) via the "Start" button
+- start the [SVN service](http://localhost:3343/csvn/) via the "Start" button if not yet started
 - in the [Repo List](http://localhost:3343/csvn/repo/list) click "Discover" - to discover repositories created in the shared volume
 - run [`./commit_into_repos.sh`](commit_into_repos.sh) to create the first revision in each repo
 - `docker-compose up -d go-server go-agent`
@@ -16,6 +16,7 @@
 ## SVN Externals Polling
 
 - replace the `<pipelines></pipelines>` tag content in [test/godata/config/cruise-config.xml](test/godata/config/cruise-config.xml) with the contents in [test/pipeline_with_externals.xml](test/pipeline_with_externals.xml)
+- trigger the `with_externals` pipeline
 - `tail -f tail -f test/svn-data/logs/access*.log` &rarr; the server continues to poll despite `autoUpdate="false"`
 
 
